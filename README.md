@@ -1,4 +1,5 @@
-# Payment_Lab
-Name: Arnav
+# AnalyzeLoan
 
-Description: This program analyzes a loan by using a five column format.  The input of this function requires the principle, annual interest rate, and monthly payment.  The output will be in the format of this five column system which is the order of Month, Principal, Interest, Payment, and the New Balance.
+Description: Analyzes a loan using a five column format. The input of this function requires the principle, annual interest rate, and monthly payment. The output will be in the format of a five column system: Month, Principal, Interest, Payment, and New Balance.
+
+Date Created: 2018-10-25
