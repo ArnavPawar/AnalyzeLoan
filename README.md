@@ -1,6 +1,5 @@
 # AnalyzeLoan
 
-Description: ArabicToRomanNumeral takes a given text document filled with roman numerals and converts it to Arabic numbers and vice versa. This code utilizes 2 separate methods that do each part of the code.
+Description: Analyzes a loan using a five column format. The input of this function requires the principle, annual interest rate, and monthly payment. The output will be in the format of a five column system: Month, Principal, Interest, Payment, and New Balance.
 
-
-Date Created: 2018-09-18
+Date Created: 2018-09-20
