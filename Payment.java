@@ -1,6 +1,3 @@
-/**
- * Arnav Pawar
- */
 import java.text.DecimalFormat;
 import java.util.*;
 public class Payment
@@ -8,7 +5,7 @@ public class Payment
    double payment;
    double principle;
    double annualrate;
-   double newbalence;
+   double newbalance;
    double monthlyrate;   
    double interest;
   
@@ -34,24 +31,24 @@ public class Payment
         monthlyrate=annualrate/1200;
         
         interest=principle*monthlyrate;
-        newbalence =principle+interest-payment;
+        newbalance=principle+interest-payment;
             
-        System.out.println("Month"+ "  Principle" + "   Interest" + "  Payment" + "   NewBalence");//sets up the collums
+        System.out.println("Month"+ "  Principle" + "   Interest" + "  Payment" + "   newbalance");//sets up the columns
         DecimalFormat df = new DecimalFormat("$0.00");        
-        while(newbalence>payment)
+        while(newbalance>payment)
         {   
-            System.out.format("%-6s %-11s %-9s %-9s %-9s%n",months,df.format(principle),df.format(interest),df.format(payment), df.format(newbalence));//new format
+            System.out.format("%-6s %-11s %-9s %-9s %-9s%n",months,df.format(principle),df.format(interest),df.format(payment), df.format(newbalance));//new format
            
-            //System.out.println(months+"   "+df.format(principle)+"     "+df.format(interest)+"     "+df.format(monthlyrate)+"     "+df.format(newbalence)+"    ");
+            //System.out.println(months+"   "+df.format(principle)+"     "+df.format(interest)+"     "+df.format(monthlyrate)+"     "+df.format(newbalance)+"    ");
             interest=principle*monthlyrate;
-            newbalence =principle+interest-payment;
+            newbalance=principle+interest-payment;
             months++;
-            principle=newbalence;
+            principle=newbalance;
             totalinterest+=interest;     
         }          
-        interest = principle * monthlyrate;
-        newbalence = principle + interest - payment;
-         if (0 > newbalence) {
+        interest = principle* monthlyrate;
+        newbalance = principle + interest - payment;
+         if (0 > newbalance) {
          System.out.format("%-6s %-11s %-9s %-9s %-9s%n",months,df.format(principle),df.format(interest),df.format(payment), df.format(0.00));
             
         }
@@ -59,6 +56,7 @@ public class Payment
        
         
         
-        System.out.println(df.format(totalinterest)+" will now be your total intrest");//finds the total intrest
+        System.out.println(df.format(totalinterest)+" will now be your total interest");//finds the total interest
      }
 }
+
